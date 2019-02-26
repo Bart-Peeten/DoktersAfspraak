@@ -21,9 +21,9 @@ public class LoginController {
         return new ResponseEntity<>(users, HttpStatus.OK);
     }
 
-    @PostMapping(path = "{id}/{name}")
+    @PostMapping(path = "add", consumes = "application/json")
     public ResponseEntity addNewUser(@PathVariable long id,
-                                     @PathVariable String name){
+                                     @RequestBody User user){
         return null;
     }
 }
