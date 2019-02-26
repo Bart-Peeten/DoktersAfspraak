@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73ecc07c-c663-4f6c-8b98-2250d64dda0e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Controllers/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Interfaces/LoginManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Roles/Roles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Service/LoginManagerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Controllers/AppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Controllers/AppointmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Interfaces/AppointmentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Interfaces/AppointmentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/pxl/s2it/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/pxl/s2it/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Service/AppointmentManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Service/AppointmentManagerImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -14,18 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/DoctorMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="99" selection-start-line="10" selection-start-column="99" selection-end-line="10" selection-end-column="99" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Domain/Appointment.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -70,20 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" column="30" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Controllers/AppointmentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="59" column="55" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
+            <state relative-caret-position="164">
+              <caret line="39" column="38" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#882#883#0" expanded="true" />
@@ -93,7 +80,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Repositories/AppointmentRepo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
@@ -108,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Service/AppointmentManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+            <state relative-caret-position="101">
+              <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#678#679#0" expanded="true" />
@@ -118,8 +105,52 @@
                 <element signature="e#832#833#0" expanded="true" />
                 <element signature="e#805#806#0" expanded="true" />
                 <element signature="e#850#851#0" expanded="true" />
-                <element signature="e#1746#1747#0" expanded="true" />
+                <element signature="e#1782#1783#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Roles/Roles.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Controllers/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Service/LoginManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#217#218#0" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Interfaces/LoginManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -127,26 +158,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/SecurityConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="364">
+              <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Domain/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#699#700#0" expanded="true" />
-                <element signature="e#728#729#0" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
-                <element signature="e#808#809#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,9 +181,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -183,14 +198,18 @@
         <option value="$PROJECT_DIR$/src/main/java/DoctorMain.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Domain/Appointment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Controllers/AppointmentController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/pxl/s2it/SecurityConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/pxl/s2it/DoctorMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Enums/Roles.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Interfaces/AppointmentManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Service/AppointmentManagerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Repositories/AppointmentRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/pxl/s2it/SecurityConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Interfaces/LoginManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Service/AppointmentManagerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Roles/Roles.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Service/LoginManagerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Controllers/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/pxl/s2it/Controllers/AppointmentController.java" />
       </list>
     </option>
   </component>
@@ -311,7 +330,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551176553865" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551186853649" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -357,12 +376,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550580255734</updated>
-      <workItem from="1550580266548" duration="14656000" />
+      <workItem from="1550580266548" duration="17292000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14656000" />
+    <option name="totallyTimeSpent" value="17292000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -428,18 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Controllers/AppointmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="59" column="55" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="972">
@@ -458,16 +465,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="99" selection-start-line="10" selection-start-column="99" selection-end-line="10" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/SecurityConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -529,6 +526,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Repositories/AppointmentRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/SecurityConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Interfaces/LoginManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Interfaces/AppointmentManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -536,10 +560,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Roles/Roles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Service/LoginManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Service/AppointmentManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+        <state relative-caret-position="101">
+          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#678#679#0" expanded="true" />
@@ -548,17 +591,29 @@
             <element signature="e#832#833#0" expanded="true" />
             <element signature="e#805#806#0" expanded="true" />
             <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#1746#1747#0" expanded="true" />
+            <element signature="e#1782#1783#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Repositories/AppointmentRepo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Controllers/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="383">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/s2it/Controllers/AppointmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="39" column="38" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
           </folding>
         </state>
       </provider>

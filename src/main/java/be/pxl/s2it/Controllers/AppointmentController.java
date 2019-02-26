@@ -25,22 +25,22 @@ public class AppointmentController {
 
         if(appointments.spliterator().getExactSizeIfKnown() > 0){
             System.out.println(appointments);
-            return new ResponseEntity<Iterable<Appointment>>(appointments, HttpStatus.OK);
+            return new ResponseEntity<>(appointments, HttpStatus.OK);
         } else {
-            return new ResponseEntity<Iterable<Appointment>>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
 
     @GetMapping(path = "{id}")
     @Transactional(readOnly = true)
     public ResponseEntity<Appointment> getAppointmentById(@PathVariable Long id){
-        Appointment appointment = manager.getAppointment(id);
+        Appointment appointment = manager.getAppointmentById(id);
 
         if(appointment != null){
-            return new ResponseEntity<Appointment>(appointment, HttpStatus.OK);
+            return new ResponseEntity<>(appointment, HttpStatus.OK);
         } else {
             System.out.println("Het gezochte object kan niet gevonden worden!");
-            return new ResponseEntity<Appointment>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
 

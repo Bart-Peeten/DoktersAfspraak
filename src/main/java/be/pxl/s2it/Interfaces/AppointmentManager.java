@@ -5,7 +5,7 @@ import be.pxl.s2it.Domain.Appointment;
 public interface AppointmentManager {
 
     Iterable<Appointment> getAllAppointments();
-    Appointment getAppointment(long id);
+    Appointment getAppointmentById(long id);
     Iterable<Appointment> getAppointmentsByNameAndLastName(String name, String lastName);
     Appointment addNewAppointment(Appointment appointment);
     Appointment changeAppointmentById(long id, Appointment appointment);
