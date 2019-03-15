@@ -1,10 +1,13 @@
 package be.pxl.s2it.Controllers;
 
 import be.pxl.s2it.Domain.Appointment;
+import be.pxl.s2it.HelperClass.Helper;
 import be.pxl.s2it.Interfaces.AppointmentManager;
+import be.pxl.s2it.Messaging.Listener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.jms.core.JmsTemplate;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,6 +19,9 @@ public class AppointmentController {
 
     @Autowired
     private AppointmentManager manager;
+
+    @Autowired
+    private JmsTemplate jmsTemplate;
 
     @GetMapping(path = "all")
     @Transactional(readOnly = true)
@@ -50,6 +56,15 @@ public class AppointmentController {
         Appointment appointment1 = manager.addNewAppointment(appointment);
 
         return new ResponseEntity(appointment1, HttpStatus.OK);
+    }
+
+    @PostMapping(path = "add/message", consumes = "application/json")
+    public ResponseEntity<Appointment> addNewAppointmentWithQueue(@RequestBody @Valid Appointment appointment){
+        jmsTemplate.convertAndSend(Helper.JMS_QUEUE, appointment);
+        //listener.onMessage(appointment);
+        System.out.println("Er is naar de Message Queue geschreven!");
+
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @PutMapping(path = "change/{id}")
